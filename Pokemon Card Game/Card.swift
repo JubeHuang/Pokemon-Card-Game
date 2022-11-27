@@ -9,5 +9,4 @@ import Foundation
 
 struct Card {
     var name: String
-    var flip: Bool
 }
