@@ -82,7 +82,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QYO-bl-sPg"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBX-RE-Fft"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-r9-MFP">
@@ -94,7 +94,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnf-FX-oZ4"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiI-hQ-Nkd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR7-2w-oKf">
@@ -106,7 +106,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Df-rh-QYG"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOn-AX-6bP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwr-bW-y9P">
@@ -118,7 +118,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVn-4e-FTb"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15H-PI-ueQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-wC-59r">
@@ -130,7 +130,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRb-b8-sI1"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZG-y9-5aH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9h-8C-NN5">
@@ -142,7 +142,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CoD-jY-yNG"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfl-RD-GEL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoA-jY-H9f">
@@ -154,7 +154,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vZ-1v-UtZ"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhL-zk-d2G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-Ju-bh9">
@@ -166,7 +166,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jr9-ej-YhF"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4W3-CT-XH4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4t-nI-BnL">
@@ -178,7 +178,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QS8-8D-Hx7"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQJ-wq-qHj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZK-TK-KZN">
@@ -190,7 +190,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPo-rk-PRU"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lma-eU-ib8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-Fi-X7K">
@@ -202,7 +202,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfX-1L-rr1"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azD-Hj-qyV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bb-Ik-0PJ">
@@ -214,7 +214,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hoy-X3-JRC"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMh-ub-cRl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy6-Xv-tUA">
@@ -226,7 +226,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eYq-38-5wU"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWi-ZH-unv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-YG-MUZ">
@@ -238,7 +238,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPb-fd-wMS"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEn-cM-YKh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-Kv-L1P">
@@ -250,7 +250,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odz-uW-hre"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQ3-O7-M8d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNd-KW-h6Q">
@@ -262,7 +262,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soL-tv-fiM"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ms-iS-F1s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-uu-SQW">
@@ -274,7 +274,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnl-es-RPA"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bT8-UN-MQf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpR-ig-fGq">
@@ -286,7 +286,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSe-fk-8ac"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQS-dE-rpA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be8-Fs-wbH">
@@ -298,7 +298,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jb0-r5-GQh"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wd3-Bi-OP1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-gp-GCL">
@@ -310,7 +310,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIj-U7-fYf"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9Y-76-BzB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icv-BP-Fjg">
@@ -322,7 +322,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t01-5A-Lod"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUf-Dz-inS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-0a-80U">
@@ -334,7 +334,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ria-FJ-WzA"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ef-xK-NdN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZS-4n-87J">
@@ -346,7 +346,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pl-zw-UJD"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Nu-LA-Tfu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtP-Hn-osT">
@@ -358,7 +358,7 @@
                                     <backgroundConfiguration key="background" image="cardBack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Bq-fu-DHo"/>
+                                    <action selector="openCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJ9-xd-r3g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -366,32 +366,32 @@
                         <color key="backgroundColor" red="0.047058823529411764" green="0.086274509803921567" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="scoreLabel" destination="kdu-6C-5x9" id="0Sq-94-YAP"/>
-                        <outlet property="timerLabel" destination="WlK-zo-JWW" id="nqE-Xw-7Wq"/>
-                        <outletCollection property="cards" destination="hBb-tH-QET" collectionClass="NSMutableArray" id="GdS-ZB-gnq"/>
-                        <outletCollection property="cards" destination="w9T-r9-MFP" collectionClass="NSMutableArray" id="ojI-ZB-NhC"/>
-                        <outletCollection property="cards" destination="bR7-2w-oKf" collectionClass="NSMutableArray" id="iCl-F8-Iz9"/>
-                        <outletCollection property="cards" destination="Jwr-bW-y9P" collectionClass="NSMutableArray" id="yfq-x0-8RV"/>
-                        <outletCollection property="cards" destination="fUD-wC-59r" collectionClass="NSMutableArray" id="5Re-qu-1Lg"/>
-                        <outletCollection property="cards" destination="k9h-8C-NN5" collectionClass="NSMutableArray" id="hPi-A4-eQF"/>
-                        <outletCollection property="cards" destination="YoA-jY-H9f" collectionClass="NSMutableArray" id="VHq-6D-gAP"/>
-                        <outletCollection property="cards" destination="Uq4-Ju-bh9" collectionClass="NSMutableArray" id="hZO-wE-mx4"/>
-                        <outletCollection property="cards" destination="B4t-nI-BnL" collectionClass="NSMutableArray" id="dla-Fg-L0Y"/>
-                        <outletCollection property="cards" destination="qZK-TK-KZN" collectionClass="NSMutableArray" id="hPW-YL-r5A"/>
-                        <outletCollection property="cards" destination="R4Z-Fi-X7K" collectionClass="NSMutableArray" id="8fk-Up-DdC"/>
-                        <outletCollection property="cards" destination="3Bb-Ik-0PJ" collectionClass="NSMutableArray" id="WRq-qu-4lN"/>
-                        <outletCollection property="cards" destination="Gy6-Xv-tUA" collectionClass="NSMutableArray" id="xnD-WW-fnK"/>
-                        <outletCollection property="cards" destination="qaV-YG-MUZ" collectionClass="NSMutableArray" id="fxS-rA-qG7"/>
-                        <outletCollection property="cards" destination="U0m-Kv-L1P" collectionClass="NSMutableArray" id="JVk-L3-Yne"/>
-                        <outletCollection property="cards" destination="TNd-KW-h6Q" collectionClass="NSMutableArray" id="gFJ-eA-pvs"/>
-                        <outletCollection property="cards" destination="5MX-uu-SQW" collectionClass="NSMutableArray" id="KFa-aC-Bza"/>
-                        <outletCollection property="cards" destination="gpR-ig-fGq" collectionClass="NSMutableArray" id="Ofc-SP-H62"/>
-                        <outletCollection property="cards" destination="Be8-Fs-wbH" collectionClass="NSMutableArray" id="zFm-nE-QLa"/>
-                        <outletCollection property="cards" destination="KeV-gp-GCL" collectionClass="NSMutableArray" id="peA-jG-ZMn"/>
-                        <outletCollection property="cards" destination="Icv-BP-Fjg" collectionClass="NSMutableArray" id="77F-Oc-NA6"/>
-                        <outletCollection property="cards" destination="Dhc-0a-80U" collectionClass="NSMutableArray" id="zxB-aG-h9W"/>
-                        <outletCollection property="cards" destination="nZS-4n-87J" collectionClass="NSMutableArray" id="RgV-m9-dr3"/>
-                        <outletCollection property="cards" destination="YtP-Hn-osT" collectionClass="NSMutableArray" id="xZE-CT-GJG"/>
+                        <outlet property="scoreLabel" destination="kdu-6C-5x9" id="nGJ-pi-iwz"/>
+                        <outlet property="timerLabel" destination="WlK-zo-JWW" id="yvE-y2-ifh"/>
+                        <outletCollection property="cards" destination="hBb-tH-QET" collectionClass="NSMutableArray" id="CNw-Lr-fJM"/>
+                        <outletCollection property="cards" destination="w9T-r9-MFP" collectionClass="NSMutableArray" id="fQQ-Hd-cTY"/>
+                        <outletCollection property="cards" destination="bR7-2w-oKf" collectionClass="NSMutableArray" id="h38-ev-zgQ"/>
+                        <outletCollection property="cards" destination="Jwr-bW-y9P" collectionClass="NSMutableArray" id="YJl-Kc-zpM"/>
+                        <outletCollection property="cards" destination="fUD-wC-59r" collectionClass="NSMutableArray" id="4Q1-N1-O3g"/>
+                        <outletCollection property="cards" destination="k9h-8C-NN5" collectionClass="NSMutableArray" id="U1I-1q-C6J"/>
+                        <outletCollection property="cards" destination="YoA-jY-H9f" collectionClass="NSMutableArray" id="a0y-oG-eBy"/>
+                        <outletCollection property="cards" destination="Uq4-Ju-bh9" collectionClass="NSMutableArray" id="gXx-Bk-j10"/>
+                        <outletCollection property="cards" destination="B4t-nI-BnL" collectionClass="NSMutableArray" id="K6V-IF-n2H"/>
+                        <outletCollection property="cards" destination="qZK-TK-KZN" collectionClass="NSMutableArray" id="FyO-oE-rFT"/>
+                        <outletCollection property="cards" destination="R4Z-Fi-X7K" collectionClass="NSMutableArray" id="gSa-23-0kj"/>
+                        <outletCollection property="cards" destination="3Bb-Ik-0PJ" collectionClass="NSMutableArray" id="oCa-kf-R7R"/>
+                        <outletCollection property="cards" destination="Gy6-Xv-tUA" collectionClass="NSMutableArray" id="Sv7-Yg-99F"/>
+                        <outletCollection property="cards" destination="qaV-YG-MUZ" collectionClass="NSMutableArray" id="Gf9-v4-IrV"/>
+                        <outletCollection property="cards" destination="U0m-Kv-L1P" collectionClass="NSMutableArray" id="vZ7-Rf-AY7"/>
+                        <outletCollection property="cards" destination="TNd-KW-h6Q" collectionClass="NSMutableArray" id="FLo-y1-rXA"/>
+                        <outletCollection property="cards" destination="5MX-uu-SQW" collectionClass="NSMutableArray" id="8nc-U2-A5H"/>
+                        <outletCollection property="cards" destination="gpR-ig-fGq" collectionClass="NSMutableArray" id="ZpZ-WV-2aC"/>
+                        <outletCollection property="cards" destination="Be8-Fs-wbH" collectionClass="NSMutableArray" id="ELw-Q1-ILY"/>
+                        <outletCollection property="cards" destination="KeV-gp-GCL" collectionClass="NSMutableArray" id="f4v-Vw-OV4"/>
+                        <outletCollection property="cards" destination="Icv-BP-Fjg" collectionClass="NSMutableArray" id="FFN-xG-hOJ"/>
+                        <outletCollection property="cards" destination="Dhc-0a-80U" collectionClass="NSMutableArray" id="YJy-Qx-xRd"/>
+                        <outletCollection property="cards" destination="nZS-4n-87J" collectionClass="NSMutableArray" id="XPs-E1-rng"/>
+                        <outletCollection property="cards" destination="YtP-Hn-osT" collectionClass="NSMutableArray" id="t2e-zV-LNi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

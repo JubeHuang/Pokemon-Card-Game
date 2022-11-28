@@ -8,150 +8,143 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var totalImageNames = ["太陽珊瑚","果然翁","可達鴨","雪吞蟲","仙子伊布","菊草葉","夢幻","多邊獸","胖丁","六尾","皮卡丘超極巨化","皮卡丘","巴大蝶","傑尼龜","小火龍","妙蛙"]
-    var cardsArray = [Card]()
-    var pickedCards = [Int]()
-    @IBOutlet var cards: [UIButton]!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet var cards: [UIButton]!
+    
+    var totalImageNames = ["太陽珊瑚","果然翁","可達鴨","雪吞蟲","仙子伊布","菊草葉","夢幻","多邊獸","胖丁","六尾","皮卡丘超極巨化","皮卡丘","巴大蝶","傑尼龜","小火龍","妙蛙"]
     var score = 0
+    var pickedCardNums = [Int]()
+    var cardImageNames = [String]()
     var timer = Timer()
-    var countDownTime = Int()
-    var firstCountDownStart = true
+    var coundownTime = 10
+    var firstCountDown = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         shuffleCards()
-        countDownTime(seconds: 10, selector: #selector(countDown10))
+        countDownTimer(selector: #selector(countDown10))
     }
     
     @IBAction func openCard(_ sender: UIButton) {
         //利用sender尋找按下的卡片編號 存進cardNum
-        if let cardNum = cards.firstIndex(of: sender){
+        if let cardNum = cards.firstIndex(of: sender) {
             //當牌沒被翻面時，才可翻牌
-            if cards[cardNum].alpha == 1 {
-                revealCardImage(num: cardNum, imageName: cardsArray[cardNum].name)
-                pickedCards.append(cardNum)
-                
-                //當翻開兩張牌時 比對卡牌名稱是否一樣
-                if pickedCards.count == 2 {
+            if cards[cardNum].configuration?.image == UIImage(named: "cardBack") {
+                revealCardImage(cardNum: cardNum, imageName: cardImageNames[cardNum])
+                pickedCardNums.append(cardNum)
+                //當翻了兩張卡牌時
+                if pickedCardNums.count == 2 {
                     //不能再按第三張牌
                     for i in 0..<cards.count{
                         cards[i].isEnabled = false
                     }
-                    //兩張牌相同
-                    if cards[pickedCards[0]].configuration?.image == cards[pickedCards[1]].configuration?.image{
-                        for i in 0...1{
-                            self.cards[self.pickedCards[i]].alpha = 0.7
-                        }
-                        pickedCards = []
+                    //當兩張卡牌名稱相同
+                    if cardImageNames[pickedCardNums[0]] == cardImageNames[pickedCardNums[1]] {
+                        for i in 0...1 {cards[pickedCardNums[i]].alpha = 0.7}
+                        score += 1
+                        scoreLabel.text = "\(score)"
+                        pickedCardNums.removeAll()
                         for i in 0..<cards.count{
                             cards[i].isEnabled = true
                         }
-                        score += 1
-                        scoreLabel.text = "\(score)"
-                    }else {
+                    } else {
                         //等翻完第二張牌0.3s+兩張翻回背面0.3s
-                        DispatchQueue.main.asyncAfter(deadline: .now()+0.6) {
+                        DispatchQueue.main.asyncAfter(deadline: .now()+0.6){
                             for i in 0...1{
-                                self.revealCardImage(num: self.pickedCards[i], imageName: "cardBack")
-                                for i in 0..<self.cards.count{
-                                    self.cards[i].isEnabled = true
-                                }
+                                self.revealCardImage(cardNum: self.pickedCardNums[i], imageName: "cardBack")
                             }
-                            self.pickedCards = []
+                            self.pickedCardNums.removeAll()
+                            for i in 0..<self.cards.count{
+                                self.cards[i].isEnabled = true
+                            }
                         }
                     }
                 }
             }
         }
-        if score == 12 {
-            timer.invalidate()
-            gameOverAlert()
+    }
+    
+    func shuffleCards(){
+        totalImageNames.shuffle()
+        for i in 0...11 {
+            cardImageNames.append(totalImageNames[i])
+        }
+        for i in 0...11 {
+            cardImageNames.append(cardImageNames[i])
+        }
+        cardImageNames.shuffle()
+    }
+    
+    func revealCardImage(cardNum: Int, imageName: String){
+        UIView.transition(with: cards[cardNum], duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+        cards[cardNum].configuration?.image = UIImage(named: imageName)
+    }
+    
+    func changeTotalImage(imageCount: Int, imageName: String){
+        for i in 0..<imageCount {
+            revealCardImage(cardNum: i, imageName: imageName)
         }
     }
     
     @objc func countDown10() {
-        countDownTime -= 1
-        timerLabel.text = "\(countDownTime)"
-        if countDownTime == 0 {
+        firstCountDown = true
+        coundownTime -= 1
+        timerLabel.text = "\(coundownTime)"
+        if coundownTime == 0 {
             timer.invalidate()
-            firstCountDownStart = false
-            for i in 0..<cards.count {
-                revealCardImage(num: i, imageName: "cardBack")
-            }
-            //翻牌完後倒數60s
-            countDownTime(seconds: 60, selector: #selector(countDown60))
+            firstCountDown = false
+            changeTotalImage(imageCount: cards.count, imageName: "cardBack")
+            coundownTime = 60
+            timerLabel.text = "\(coundownTime)"
+            countDownTimer(selector: #selector(countDown60))
         }
     }
     
     @objc func countDown60() {
-        countDownTime -= 1
-        timerLabel.text = "\(countDownTime)"
-        if countDownTime == 0 {
+        coundownTime -= 1
+        timerLabel.text = "\(coundownTime)"
+        //倒數結束or滿分
+        if coundownTime == 0 || score == 12{
             timer.invalidate()
-            gameOverAlert()
+            firstCountDown = true
+            //alert
+            let gameOverAlert = UIAlertController(title: "Gotcha", message: "You Got \(score) Score.", preferredStyle: .alert)
+            let replayBtn = UIAlertAction(title: "Replay", style: .default) { _ in
+                self.gameReplay()
+            }
+            gameOverAlert.addAction(replayBtn)
+            present(gameOverAlert, animated: true)
         }
     }
     
-    func countDownTime(seconds: Int, selector: Selector){
+    func countDownTimer(selector:Selector){
         //app開啟後一秒揭露卡牌
         DispatchQueue.main.asyncAfter(deadline: .now()+1){
             //控制第一次才會揭露卡牌圖案
-            if self.firstCountDownStart == true {
+            if self.firstCountDown == true {
                 for i in 0..<self.cards.count {
-                    self.revealCardImage(num: i, imageName: self.cardsArray[i].name)
+                    self.revealCardImage(cardNum: i, imageName: self.cardImageNames[i])
                 }
             }
-            self.countDownTime = seconds
-            //設定timer在不同計時段選取不同function
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: selector, userInfo: nil, repeats: true)
         }
     }
     
-    func shuffleCards() {
-        totalImageNames.shuffle()
-        var card = Card(name: "")
-        for i in 0...11 {
-            card.name = totalImageNames[i]
-            cardsArray.append(card)
-        }
-        for i in 0...11 {
-            cardsArray.append(cardsArray[i])
-        }
-        cardsArray.shuffle()
-        print(cardsArray)
-    }
-    
-    func revealCardImage(num:Int, imageName:String) {
-        UIView.transition(with: cards[num], duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
-        cards[num].configuration?.image = UIImage(named: imageName)
-    }
-    
-    func reStart() {
-        timerLabel.text = "10"
-        scoreLabel.text = "0"
-        score = 0
-        pickedCards.removeAll()
-        shuffleCards()
-        countDownTime(seconds: 10, selector: #selector(countDown10))
-        firstCountDownStart = true
-        for i in 0..<cards.count{
+    func gameReplay(){
+        changeTotalImage(imageCount: cards.count, imageName: "cardBack")
+        for i in 0..<cards.count {
             cards[i].alpha = 1
-            revealCardImage(num: i, imageName: "cardBack")
         }
+        score = 0
+        coundownTime = 10
+        scoreLabel.text = "\(score)"
+        timerLabel.text = "\(coundownTime)"
+        pickedCardNums = []
+        cardImageNames = []
+        shuffleCards()
+        countDownTimer(selector: #selector(countDown10))
     }
-    
-    func gameOverAlert(){
-        let gameOverAlert = UIAlertController(title: "Gotcha", message: "You get \(score) score", preferredStyle: .alert)
-        //點擊btn後要做事
-        let alertBtn = UIAlertAction(title: "Replay", style: .default){ _ in
-            self.reStart()
-        }
-        gameOverAlert.addAction(alertBtn)
-        present(gameOverAlert, animated: true)
-    }
-
 }
 
